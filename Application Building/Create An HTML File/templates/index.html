@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<style>
+body
+{
+    background-image: url("{{url_for('static', filename='hr.jpg')}}");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.navbar
+{
+margin: 0px;
+padding:20px;
+background-color:white;
+opacity:0.6;
+color:black;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-style: italic;
+border-radius:20px;
+font-size:25px;
+}
+a
+{
+color:grey;
+float:right;
+text-decoration:none;
+font-style:normal;
+padding-right:20px;
+}
+a:hover{
+background-color:black;
+color:white;
+border-radius:15px;
+font-size:30px;
+padding-left:10px;
+}
+p
+{
+color:turqouise;
+font-size:20px;
+text-align: center; 
+color: white;
+font-family: verdana;
+}
+p span { 
+    background-color: black; 
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+<a href="/" >Contact</a>
+<a href="/about">Home</a>
+<br>
+</div>
+<br>
+<center><h1 style="font-family:'Times New Roman', Times, serif;">CRUDE OIL PRICE PREDICTOR</h1></center>
+<br>
+<center>
+<p><span>
+Crude oil price fluctuations have a far reaching impact on global economies and thus price forecasting can assist in <span></p><p><span>minimising the risks associated with volatility in oil prices. Price forecasts are very important to various stakeholders:</span></p><p><span>governments, public and private enterprises, policymakers, and investors.This application aims to help predict crude oil price<span></p><p><span> with the help of Time series forecasting , by using the data of crude oil prices over the past 10 days.<span></p>
+<br><br><br>
+ <center><button style="border-radius: 50px;width: 250px;height: 50px;background: linear-gradient(120deg,rgb(244, 122, 52),rgb(17, 11, 0),rgb(231, 230, 235),rgb(234, 234, 237));color:black;"><span style="font-size: 20px;"><a href="/predict">Predict Crude Oil Price</a></span></button></center>  
+</center>
+</div>
+</body>
+</html>
